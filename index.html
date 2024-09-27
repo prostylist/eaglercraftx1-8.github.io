@@ -18,12 +18,6 @@
     <p>Site views counter:</p>
     <div align='center'><a><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=177632&s=16' border='0' alt='View Counter'></a></div>
     <p>These clients might be outdated.</p>
-    <p>Please give our github repository a star if you like this site (link at the bottom)</p>
-    <p>Server List and Mod List also at the bottom if you need it.</p>
-    <p>Have any questions, bug reports or suggestions? Join our Discord server by pressing the button below!</p>
-    <a href="https://discord.gg/czV7M8JXXM" class="dsc-btn" target="_blank">Discord Server</a>
-    <p>Scroll down to the bottom for buttons/links.</p>
-
     <h2 class="pick-client">Pick a Client:</h2>
 
     <label for="mobileCheckbox">Mobile Checkbox</label>
@@ -86,13 +80,21 @@
         </div>
     </div>
 
-    <h3>DANGER ZONE</h3>
+    <div id='yapping'>
+        <p>Please give our github repository a star if you like this site (link at the bottom)</p>
+        <p>Server List and Mod List also at the bottom if you need it.</p>
+        <p>Have any questions, bug reports or suggestions? Join our Discord server by pressing the button below!</p>
+        <a href="https://discord.gg/czV7M8JXXM" class="dsc-btn" target="_blank">Discord Server</a>
+    </div>
+
+    <h3 id="danger_header">DANGER ZONE</h3>
+    <p>If you aren't sure what you're doing, you shouldn't mess with anything down here.</p>
     <a onclick="openClrModal();" class="clr-btn">Reset All Local Data</a>
     
     <div id="clr-data-model" class="modal">
         <div class="modal-content">
-            <h2>DANGER ZONE</h2>
-            <p>Are you sure you want to clear all your local data</p>
+            <h2>WARNING</h2>
+            <p>Are you sure you want to clear all your local data? (This will delete EVERYTHING)</p>
             <button onclick="localStorage.clear(); location.reload();">Yes</button>
             <button class="cancel-btn" onclick="closeClrModal()">Cancel</button>
             </div>
